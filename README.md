@@ -1,4 +1,4 @@
 # Rickroll
-A website with the auto-playing song "Never Gonna Give You Up" that can be used to rickroll your friends.
+A website with the auto-playing song "Never Gonna Give You Up" to rickroll people.
 
-**Find it here: https://bit.ly/3IPcuoB**
+Link: https://bit.ly/3RxW8E4
