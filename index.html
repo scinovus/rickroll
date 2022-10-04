@@ -1,46 +1,5 @@
 <!--
 <!DOCTYPE html>
-
-<html>
-   <head>
-      <title>Rickroll</title>
-      <link rel="icon" href="/favicon.ico" type="image/x-icon">
-   </head>
-   
-   <body>
-      <video autoplay loop width="100%">
-      <source src="song.mp4", type="video/mp4">
-         Sorry, your browser doesn't support embedded videos.
-      </video>
-      
-      <script>
-        
-         // Change the variables below to your liking
-         const currentURL = "song.mp4";
-         const pageTitle = "Loading...";
-         // End of changable variables
-         
-         function setTitle() {
-            document.title = pageTitle;
-         }
-         
-         function redirect() {
-            window.location.href = currentURL;
-         }
-         
-         function onload() {
-            setTitle();
-            redirect();
-         }
-         
-         window.onload = onload();
-       </script>
-       
-   </body>
-</html>
--->
-
-<!DOCTYPE html>
 <html>
    <body>
        <video autoplay loop width="100%">
@@ -72,4 +31,47 @@
          window.onload = onload();
        </script>
    </body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <title>Rickroll</title>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/e53a2255-5e5e-4df1-a15d-47250e916490/rickastley.ico?v=1664885959721"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body style="background-color:black;">
+    
+    
+    <video controls autoplay loop id="video1" width="100%">
+      <source
+        src="https://cdn.glitch.global/e53a2255-5e5e-4df1-a15d-47250e916490/song.mp4?v=1664885697871"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+    
+    <!--
+    <video loop="" controls="" autoplay="" name="media">
+      <source 
+         src="https://shattereddisk.github.io/rickroll/rickroll.mp4" 
+        type="video/mp4">
+    </video>
+    -->
+    
+    <script>      
+      const myVideo = document.getElementById("video1");   
+      window.onload = myVideo.play();  
+    </script>
+
+  </body>
+  
 </html>
