@@ -59,17 +59,12 @@
       Your browser does not support the video tag.
     </video>
     
-    <!--
-    <video loop="" controls="" autoplay="" name="media">
-      <source 
-         src="https://shattereddisk.github.io/rickroll/rickroll.mp4" 
-        type="video/mp4">
-    </video>
-    -->
-    
     <script>      
-      const myVideo = document.getElementById("video1");   
-      window.onload = myVideo.play();  
+      const myVideo = document.getElementById("video1");  
+      function onload() {
+        myVideo.play();
+      }
+      window.onload = onload();
     </script>
 
   </body>
